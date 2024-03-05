@@ -429,7 +429,6 @@ for (var i = 0; i < 10; i++) {
   }
 }
 
-
 // 10. Create an array which contains user names
 // Code a prompt with the message "Enter first name". The user's response is assigned to firstName.
 // Code the first line of a for loop with the usual counter, the usual
@@ -438,4 +437,77 @@ for (var i = 0; i < 10; i++) {
 // Code an if statement that tests the presense of (user name) in an array.
 // If user name match Alert that "Enter". if not then alert ("Please write correct user name").
 
+var userInput = prompt("Enter User name.");
+var user = ["waleed", "ahmed", "ali", "sofiyan", "tayyab"];
+var found = false;
 
+for (var i = 0; i > user.length; i++) {
+  if (user === user[i]) {
+    found = true;
+    alert("Enter");
+    break;
+  }
+}
+if (!found) {
+  alert("Please write correct user name");
+}
+
+// 11. Complete this code to display an alert if a match isn't found.
+// var matchFound = false;
+// for (var i = 0; i < list.length; i++) {
+//  if (userInput === list[i]) {
+//  alert("Match found");
+//  matchFound = true;
+//  break;
+//  }
+// };
+
+var userInput = +prompt("Enter Number");
+
+var list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+var matchFound = false;
+
+for (var i = 0; i < list.length; i++) {
+  if (userInput === list[i]) {
+    matchFound = true;
+    alert("Match found");
+    break;
+  }
+}
+
+if (!matchFound) {
+  alert("Enter correct number");
+}
+
+
+// 12. var firstArr = [“a”, “b”, “c”, “d”, “e”, “f”];
+// var secondArr = [1, 2, 3, 4, 5, 6];
+// Code the first line of a for loop with the usual counter, the usual
+// starting value, and the usual incrementing. Limit the number of
+// loops by the number of elements in the array firstArr.
+// In the scope of main loop Code the nested loop. Limit the number
+// of nested loops by the number of elements in the array
+// secondArr.
+// After that concatenate the both loops.
+// Expected Output:
+// a1
+// a2
+// a3
+// a4
+// …
+// f6
+
+
+var firstArr = ["a", "b", "c", "d", "e", "f"];
+var secondArr = [1, 2, 3, 4, 5, 6];
+
+for (var i = 0; i < firstArr.length; i++) {
+  for (var j = 0; j < secondArr.length; j++) {
+    var finalArr = firstArr[i] + secondArr[j];
+    console.log(finalArr);
+  }
+}
+
+
+// ************************************ 20 Chapters Done ***********************************************

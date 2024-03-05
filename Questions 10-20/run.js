@@ -224,10 +224,53 @@ var num2 = 25;
 //   console.log(pets[i]);
 // }
 
-for (var i = 0; i < 10; i++) {
-  if ((i = 1)) {
-    alert("It Should be 1");
-    console.log(i);
-    break;
+// for (var i = 0; i < 10; i++) {
+//   if ((i = 1)) {
+//     alert("It Should be 1");
+//     console.log(i);
+//     break;
+//   }
+// }
+
+// var user = prompt("Enter Your userName.");
+// var userName = ["waleed", "ahmed", "ali", "aman", "anus"];
+// var found = false;
+
+// for (var i = 0; i < userName.length; i++) {
+//   if (user == userName[i]) {
+//     found = true;
+//     alert("Enter");
+//     break;
+//   }
+// }
+// if (!found) {
+//   alert("Please write correct user name");
+// }
+
+// var userInput = +prompt("Enter Number");
+
+// var list = [1, 2, 3, 4, 5];
+
+// var matchFound = false;
+
+// for (var i = 0; i < list.length; i++) {
+//   if (userInput === list[i]) {
+//     matchFound = true;
+//     alert("Match found");
+//     break;
+//   }
+// }
+
+// if (!matchFound) {
+//   alert("Enter correct number");
+// }
+
+var firstArr = ["a", "b", "c", "d", "e", "f"];
+var secondArr = [1, 2, 3, 4, 5, 6];
+
+for (var i = 0; i < firstArr.length; i++) {
+  for (var j = 0; j < secondArr.length; j++) {
+    var finalArr = firstArr[i] + secondArr[j];
+    console.log(finalArr);
   }
 }
